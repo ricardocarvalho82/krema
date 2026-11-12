@@ -1063,6 +1063,18 @@ Item {
 
     // The dock panel: rest-size container (positioned per edge, fits content).
     // The visible background is dockBackground, which also covers zoom growth.
+    // Faixa opaca experimental de largura total
+    Rectangle {
+        id: fullWidthBackground
+        x: 0
+        y: dockPanel.y
+        width: root.width
+        height: dockPanel.height
+        color: DockView.backgroundColor
+        visible: !DockView.isVertical
+        opacity: dockPanel.opacity
+        z: dockPanel.z - 2
+    }
     Rectangle {
         id: dockPanel
 
