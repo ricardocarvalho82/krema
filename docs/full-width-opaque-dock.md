@@ -147,11 +147,10 @@ After resuming, the modified Krema dock and the KDE Plasma desktop returned to t
 
 The opaque background, dock behavior, and window layout remained correct.
 
-### 5.2 Remaining validation
+### 5.2 Final validation
 
-The following checks remain before considering deployment validation complete:
+The following additional checks were completed successfully:
 
-- Confirm that the modified executable starts automatically after a fresh login.
-- Verify the rollback procedure and subsequent restoration of the modified version.
-
-These pending tests do not affect the successful results already recorded.
+- Confirmed automatic startup after a fresh KDE login.
+- Verified rollback to the original packaged executable.
+- Verified restoration of the experimental executable and autostart configuration.
